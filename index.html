@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>RPG game</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="player1attack.png" rel="preload" as="image">
+</head>
+
+<body onload="init()">
+  <div id="background" onkeydown="keydown(event);" onkeyup="keyup(event)" tabindex="0">
+    <div id="player"></div>
+    <div id="loding">載入中...</div>
+    <div id="HPbar">HP:100/100</div>
+    <div id="HPbarback"></div>
+    <div id="MPbar">MP:80/80</div>
+    <div id="MPbarback"></div>
+    <div id="XPlevel">1</div>
+    <div id="XPbarback"></div>
+    <div id="XPbar">XP:0/10</div>
+    <img id="coinimg" src="coin.png"></img>
+    <div id="coin">0</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
